@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Buttons : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
+
+    public AudioSource audio;
+
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void Settings()
-    { 
-       
-    }
-
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void PlaySound()
+    { 
+        audio.Play();
     }
 }
