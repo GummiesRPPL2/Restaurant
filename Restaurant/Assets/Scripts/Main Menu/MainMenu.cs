@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
-    public AudioSource audio;
-
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
@@ -15,11 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public void Quit()
     {
+        Debug.Log("Quiting...");
         Application.Quit();
-    }
-
-    public void PlaySound()
-    { 
-        audio.Play();
     }
 }
